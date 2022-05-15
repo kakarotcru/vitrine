@@ -1,0 +1,291 @@
+/*GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --jaune: #ea9f05;            
+    --grisfonce: #cacaca; 
+    --gristresfonce: #1c1c1c;
+    --gris:rgb(70, 70, 70);                                           /*toujours a mettre en debut de CSS*/ 
+}
+ul {                                                                         
+    list-style: none;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #ddd;;
+}
+.wrap {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.jaune {
+    color: var(--jaune);
+}
+.barre {
+    text-decoration: line-through;
+}
+
+/*header*/
+
+header .wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+}
+header .wrap .yellow {
+    background: linear-gradient(#ddd, var(--jaune));
+    width: 4px;
+    height: 150px;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+}
+header .wrap .logo {
+    margin-top: 3rem;
+    padding-left: 2rem;
+    position: relative;
+}
+header .wrap .logo h2 {
+    margin-top: .5rem;
+    
+}
+header .wrap .cpt {
+    text-align: center; 
+    position: relative; 
+}
+header .wrap .cpt .grey1 {
+    background: linear-gradient(#ddd, var(--gris));
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    bottom:0px;
+}
+header .wrap .cpt .grey2 {
+    background: linear-gradient(#ddd, var(--gris));
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    bottom:0px;
+    left: 165px;
+}
+header .wrap .cpt .grey3 {
+    background: linear-gradient(#ddd, var(--gris));
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    bottom:0px;
+    left: 300px
+}
+header .wrap .cpt .grey4 {
+    background: linear-gradient(#ddd, var(--gris));
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    bottom:0px;
+    left: 460px
+}
+header .wrap .cpt img{
+    width: 30px;
+}
+header .wrap .cpt_o {
+    background-color: var(--grisfonce);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 2px solid black;
+    padding: .5rem 3rem;
+    margin: 1rem 0;
+}
+header .wrap .cpt_o_g, header .wrap .cpt_o_d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+header .wrap .cpt h2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 1.5rem;
+}
+header .wrap .cpt ul {
+    display: flex;
+    flex-flow: row nowrap;   
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    gap: 4rem
+}
+header .wrap .cpt ul li a{
+    transition: all 1s;
+}
+header .wrap .cpt ul li:hover a {
+   text-shadow: 2px 2px white;
+}
+
+/*vente*/ 
+
+#vente {
+    background-color: var(--gristresfonce);
+    
+}
+#vente .wrap {
+    background-color: #ddd;
+    padding-bottom: 10rem;
+}
+#vente .gants{   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 4rem auto 0 auto;
+    gap: 6rem;
+}
+#vente .gants .photo{
+    box-shadow: 1px 1px 12px #555;
+    position: relative;
+}
+#vente .gants .photo h3 {
+    background-color: white;
+    padding: 0 2rem;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+#vente .gants .photo .titrait {
+    background: linear-gradient(to right, #ddd, var(--gris));
+    height: 3px;
+    width: 170px;
+    position: absolute;
+    right: 0px;
+    bottom: -70px;
+}
+#vente .gants .pourcent {
+    background-color: var(--gristresfonce);
+    display: inline-block;
+    padding: .8rem .5rem;
+    position: absolute;
+    top:5px;
+    right:-30px;
+    border: 8px inset var(--gris);
+    border-radius: 5px;
+}
+#vente .gants .prix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+#vente .gants .prix h3 {
+    color: white;
+    background-color: black;
+    padding: .5rem 2rem;
+}
+#vente .gants .prix .big {
+    font-size: 3rem;
+}
+
+/*pourri*/
+
+#pourri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;  
+}
+#pourri .abso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
+}
+#pourri .abso .check li:hover a {
+    text-shadow: 2px 2px white;
+}
+#pourri .abso .check .carre {
+    width: 10px;
+    height: 10px;
+    background-color: var(--grisfonce);
+}
+#pourri .bande{
+    height: 20px;
+    width: 1600px;
+    background-color: var(--gris);
+}
+#pourri .check {
+    background-color: #ddd;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   border: 1px solid black;
+   border-radius: 5px;
+   gap: 1.5rem;
+   padding: .5rem 1rem;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--gris);
+    padding-top: 5rem;
+}
+footer .wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+footer .foot_top {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+footer .foot_top .icon {
+    text-align: center;
+    width: 200px;
+    color: white;
+}
+footer .foot_top img {
+    width: 30%;
+    margin-bottom: .5rem;
+}
+footer .foot_mid {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+footer .foot_bot {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+
+/*responsive*/
+
+@media only screen and (max-width: 900px){
+    header .wrap {
+        flex-direction: column;
+    }
+    footer .foot_top {
+        flex-flow: wrap;
+        justify-content: center;
+        width: 50%;
+        gap: 1rem;
+    }
+}
